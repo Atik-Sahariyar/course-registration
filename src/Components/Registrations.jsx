@@ -1,12 +1,11 @@
 import Registration from "./Registration";
+import PropTypes from 'prop-types';
 
 const Registrations = (props) => {
     const { registrations, totalCredit, remaining, totalPrice } = props;
-
-    // const selectedCourse = props.registrations
     return (
         <div className="flex justify-center">
-            <div className=" rounded-lg bg-white p-3 mr-6">
+            <div className=" rounded-lg bg-white p-3 mr-5">
                 <h5 className=" text-blue-600 font-semibold ">Credit Hour Remaining {remaining} hr</h5>
                 <div className="border-y-[2px] my-2 py-2">
                     <h3 className="text-lg font-semibold mb-1">Course Name</h3>
@@ -22,5 +21,10 @@ const Registrations = (props) => {
         </div>
     );
 };
-
+Registrations.propTypes = {
+     registrations: PropTypes.array,
+     totalCredit: PropTypes.number,
+     remaining: PropTypes.number,
+     totalPrice: PropTypes.number
+}
 export default Registrations;
