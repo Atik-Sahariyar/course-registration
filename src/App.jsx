@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './App.css'
 import Courses from './Components/Courses'
 import Registrations from './Components/Registrations';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   const [registrations, setRegistrations] = useState([]);
@@ -18,7 +21,7 @@ function App() {
     let newCount = course.credit;
  
     if(isExist){
-     return alert('This course allready enrolled')
+     return toast('This course allready enrolled')
     }
     else{
       registrations.forEach(item =>{
@@ -29,7 +32,7 @@ function App() {
         newCount = count;
      }
      else{
-      return alert('your credit limit is 20');
+      return toast('your credit limit is 20');
      }
      if(totalCredit > 20){
         return;
@@ -63,7 +66,7 @@ function App() {
         <div>
           <Courses key={registrations.id}
           handleRegistration={handleRegistration}
-          isClicked={isClicked}></Courses>
+          isClicked={false}></Courses>
         </div>
         <div>
           <Registrations
@@ -75,6 +78,7 @@ function App() {
           ></Registrations>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </>
   )
 }

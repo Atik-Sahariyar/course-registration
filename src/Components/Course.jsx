@@ -22,9 +22,10 @@ const Course = ({ course, handleRegistration, isClicked }) => {
     );
 };
 
-Course.protoTypes = {
+Course.propTypes = {
     course: PropTypes.object.isRequired,
-    handleRegistration: PropTypes.func
+    handleRegistration: PropTypes.func,
+    isClicked: PropTypes.bool
 }
 
 export default Course;

@@ -1,6 +1,5 @@
-
+import PropTypes from 'prop-types'
 const Registration = ({registration}) => {
-    console.log(registration);
     return (
     <div>
         <ol className= " list-disc pl-4">
@@ -9,5 +8,9 @@ const Registration = ({registration}) => {
     </div>
     );
 };
+
+Registration.propTypes = {
+    registration: PropTypes.object
+}
 
 export default Registration;

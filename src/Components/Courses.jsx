@@ -1,4 +1,5 @@
-import { useEffect, useState, isClicked } from "react";
+import { useEffect, useState} from "react";
+import PropTypes  from "prop-types";
 import Course from "./Course";
 
 const Courses = ({handleRegistration}) => {    
@@ -16,11 +17,14 @@ const Courses = ({handleRegistration}) => {
             key={course.id}
             course={course}
             handleRegistration={handleRegistration}
-            isClicked={isClicked}></Course>)
+            isClicked={false}></Course>)
           }
         </div>
      </div>
     );
 };
+Courses.propTypes = {
+  handleRegistration: PropTypes.func
+}
 
 export default Courses;
