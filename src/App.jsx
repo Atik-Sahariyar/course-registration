@@ -8,11 +8,15 @@ function App() {
   const [remaining, setRemaining] = useState(0);
   const [totalCredit, setTotalCredit] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
-
+  const [isClicked, setIsClicked] = useState(false);
+  console.log(isClicked);
   const handleRegistration = course =>{
+    setIsClicked(true)
     const isExist = registrations.find(item => item.id == course.id)
     let count = course.credit;
     let sumPrice = course.price;
+    let newCount = course.credit;
+ 
     if(isExist){
      return alert('This course allready enrolled')
     }
@@ -21,11 +25,16 @@ function App() {
         count = count + item.credit;
         sumPrice = sumPrice + item.price;
       })
-
+      if(count <= 20){
+        newCount = count;
+     }
+     else{
+      return alert('your credit limit is 20');
+     }
      if(totalCredit > 20){
-        return
+        return;
       }
-      else{ setTotalCredit(count);}
+      else{ setTotalCredit(newCount)} 
       const remaining = 20 - count;
       if(remaining < 0)
       {
@@ -50,10 +59,11 @@ function App() {
   return (
     <>
       <h1 className='text-3xl font-semibold text-center my-8 '>Course Registration</h1>
-      <div className='flex flex-col md:flex-row lg:flex-row'>
+      <div className='flex flex-col-reverse md:flex-col-reverse lg:flex-row'>
         <div>
           <Courses key={registrations.id}
-          handleRegistration={handleRegistration}></Courses>
+          handleRegistration={handleRegistration}
+          isClicked={isClicked}></Courses>
         </div>
         <div>
           <Registrations
