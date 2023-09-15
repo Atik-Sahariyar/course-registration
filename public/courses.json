@@ -1,75 +1,74 @@
 [
-    {
+  {
       "id": "CSE101",
       "image": "https://i.ibb.co/nz4xZpn/Rectangle-2-2.png",
       "title": "Introduction to C Programming",
-      "description": "Introduction to C Programming covers the basics of C, teaching syntax, data types, control structures, and functions, providing a foundation for programming and problem-solving.",
+      "description": "Basics of C, syntax, data types, control structures, functions for programming and problem-solving.",
       "price": 15000,
       "credit": 3
-    },
-    {
+  },
+  {
       "id": "CSE201",
       "image": "https://i.ibb.co/VvC9Nws/Rectangle-2-3.png",
       "title": "Introduction to Algorithms",
-      "description": "Introduction to Algorithms offers a comprehensive overview of algorithm design and analysis, exploring efficient problem-solving techniques critical for computer science and data-driven industries.",
+      "description": "Comprehensive overview of algorithm design, efficient problem-solving techniques.",
       "price": 25000,
       "credit": 4
-    },
-    {
+  },
+  {
       "id": "CSE301",
       "image": "https://i.ibb.co/NYmL381/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "description": "Introduction to C++ for Data Structures and Algorithms (DSA) provides a foundation in C++ programming to master algorithmic problem-solving in computer science.",
+      "description": "C++ foundation for mastering algorithmic problem-solving.",
       "price": 10000,
       "credit": 8
-    },
-    {
+  },
+  {
       "id": "CSE401",
       "image": "https://i.ibb.co/W6PcQgP/Rectangle-3.png",
       "title": "Basic Data Structures",
-      "description": "Basic Data Structures refers to fundamental organizational units in computer science, including arrays, linked lists, stacks, queues, and trees, essential for efficient data manipulation and storage",
+      "description": "Fundamental organizational units in computer science for efficient data manipulation and storage.",
       "price": 35000,
       "credit": 7
-    },
-    {
+  },
+  {
       "id": "CSE501",
       "image": "https://i.ibb.co/GQFmwnW/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "description": "Introduction to Object-Oriented Programming (OOP) in Python covers the principles and practices of OOP using Python, emphasizing code reusability and design patterns for software development.",
+      "description": "Principles of OOP in Python, emphasizing code reusability and design patterns.",
       "price": 19000,
       "credit": 5
-    },
-    {
+  },
+  {
       "id": "CSE601",
       "image": "https://i.ibb.co/Rp4YfgN/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "description": "Software Engineering is a discipline that focuses on systematic, efficient, and reliable software development processes, encompassing design, coding, testing, and maintenance to create high-quality software products.",
+      "description": "Systematic, efficient, and reliable software development processes, design, coding, testing, maintenance.",
       "price": 23000,
       "credit": 10
-    },
-    {
+  },
+  {
       "id": "CSE701",
       "image": "https://i.ibb.co/d6Yn07b/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
-      "description": "AWS (Amazon Web Services) Cloud Computing refers to Amazon's cloud platform, offering a range of scalable and flexible computing resources and services for various business and technical applications",
+      "description": "Amazon's scalable and flexible cloud platform for various applications.",
       "price": 35000,
       "credit": 9
-    },
-    {
+  },
+  {
       "id": "CSE801",
       "image": "https://i.ibb.co/NsKdkxx/Rectangle-2-1.png",
       "title": "Database (MySQL)",
-      "description": "MySQL Database is an open-source relational database management system (RDBMS) used for storing, managing, and retrieving structured data, widely employed in web applications and software development.",
+      "description": "Open-source RDBMS for storing, managing, and retrieving structured data.",
       "price": 19000,
       "credit": 6
-    },
-    {
+  },
+  {
       "id": "CSE901",
       "image": "https://i.ibb.co/JyRfJ4V/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
-      "description": "Problem-Solving is a critical aspect of various disciplines, involving the systematic analysis and resolution of complex issues or challenges through logical thinking, creativity, and effective decision-making.",
+      "description": "Systematic analysis and resolution of complex issues through logical thinking, creativity, and effective decision-making.",
       "price": 24000,
       "credit": 4
-    }
-  ]
-  
+  }
+]
